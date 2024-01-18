@@ -1,5 +1,6 @@
 
 function displayPoem(response) {
+    
     let poemElement = document.querySelector("#poem");
     new Typewriter(poemElement, {
         strings: response.data.answer, 
@@ -21,8 +22,7 @@ function generatorPoem(event) {
 
     let poemElement=document.querySelector("#poem");
     poemElement.classList.remove("poem-hidden");
-    poemElement.innerHTML =`Generating a English poem about ${instructionsInput.value}`;
-
+    poemElement.innerHTML = `<div class="generating">⏳ Generating a English poem about ${instructionsInput.value}</div>`;
    
 }
 
