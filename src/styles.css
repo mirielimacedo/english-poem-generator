@@ -1,14 +1,32 @@
-body{
-    background-color: #ecf2f9;
+body {
+    position: relative;
     font-family: "EB Garamond", serif;
-        font-optical-sizing: auto;
-        font-weight: weight;
-        font-style: bold;
-        font-size: 15px;
-
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
 }
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://images.pexels.com/photos/11739820/pexels-photo-11739820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+   
+    z-index: -1;
+}
+
+
 a{
     color:#ea8a8a ;
+    
 }
 .container{
     margin: 120px auto;
