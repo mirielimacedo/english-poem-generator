@@ -42,14 +42,25 @@ h1{
     line-height: 1.5;
     color: #272044;
 }
-
-form{
+.form-container{
     padding: 30px;
     box-shadow: 0px 20px 60px rgb(65, 50, 100, 0.08);
     background-color: white;
     border-radius: 10px;
-    display: flex;
     margin-bottom: 30px;
+}
+.hint{
+    line-height: 1.5;
+    margin-top: 5px;
+    font-size: 12px;
+    opacity: 0.6;
+
+}
+
+form{
+    
+    display: flex;
+   
 
 }
 .instructions{
@@ -84,7 +95,10 @@ form{
     border-left: 3px solid #f0d9da;
     border-radius: 10px;
     box-shadow: 0px 20px 60px rgb(65, 50, 100, 0.08);
-
+    
+}
+.poem-hidden{
+    display: none;
 }
 footer{
     text-align: center;
